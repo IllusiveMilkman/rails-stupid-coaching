@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Ask Coach a question</h2>
+  <!-- <p>Find me in app/views/questions/ask.html.erb</p> -->
+
+  <form action="/answer" method="get">
+    <div class="form-row align-items-center">
+
+      <div class="col-sm-3 my-1">
+        <label class="sr-only" for="inlineFormInputQuestion">Question</label>
+        <input type="text" name='question' class="form-control" id="inlineFormInputQuestion" placeholder="">
+        <!-- We need the 'name' attribute otherwise we can't send params -->
+      </div>
+
+      <div class="col-auto my-1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+    </div>
+  </form>
+
+</div>
