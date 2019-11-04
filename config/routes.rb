@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # get '/answer'
   get 'answer', to: 'questions#answer', as: :answer
 
+  root to: 'questions#ask'
+
   # Generic syntax:
   # verb 'path', to: 'controller#action', as: :route_name
 end
